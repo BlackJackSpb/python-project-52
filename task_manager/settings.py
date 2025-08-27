@@ -6,7 +6,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 BASE_DIR = Path(__file__).resolve().parent.parent
-SECRET_KEY = os.getenv('SECRET_KEY', 'fallback-secret-key-for-tests') 
+SECRET_KEY = os.getenv('SECRET_KEY', 'fallback-secret-key-for-tests')
 DEBUG = os.getenv('DEBUG', 'True') == 'True'
 
 RENDER_EXTERNAL_HOSTNAME = os.getenv('RENDER_EXTERNAL_HOSTNAME')

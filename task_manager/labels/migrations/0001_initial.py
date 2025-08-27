@@ -14,9 +14,26 @@ class Migration(migrations.Migration):
         migrations.CreateModel(
             name='Label',
             fields=[
-                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('name', models.CharField(max_length=150, verbose_name='Label name')),
-                ('created_at', models.DateTimeField(auto_now_add=True, verbose_name='Created')),
+                (
+                    'id',
+                    models.BigAutoField(
+                        auto_created=True,
+                        primary_key=True,
+                        serialize=False,
+                        verbose_name='ID'
+                    )
+                    ),
+                (
+                    'name',
+                    models.CharField(max_length=150, verbose_name='Label name')
+                    ),
+                (
+                    'created_at',
+                    models.DateTimeField(
+                        auto_now_add=True,
+                        verbose_name='Created'
+                    )
+                    ),
             ],
             options={
                 'verbose_name': 'Label',
